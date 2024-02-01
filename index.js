@@ -23,7 +23,7 @@ const app = express();
 
 app.set("view engine", "ejs")
 
-app.use(express.static("./public"));
+app.use(express.static("./public_html"));
 app.use("/uv/", express.static(uvPath));
 app.use("/dynamic/", express.static(dynamicPath))
 
